@@ -109,7 +109,7 @@ export const Avatar3DCanvas: React.FC<{ className?: string }> = ({ className = '
         pivotGroup.add(rawScene);
 
         const mobileNow = window.innerWidth < 768;
-        baseScale = (mobileNow ? 2.15 : 2.5) / maxDim;
+        baseScale = (mobileNow ? 2.15 : 2.32) / maxDim;
 
         pivotGroup.position.set(0, -1.2, 0);
         pivotGroup.scale.setScalar(0.05 * baseScale);
@@ -171,7 +171,7 @@ export const Avatar3DCanvas: React.FC<{ className?: string }> = ({ className = '
       const delta = clock.getDelta();
       const elapsedTime = clock.getElapsedTime();
       const mobileCheck = window.innerWidth < 768;
-      const targetPosY = mobileCheck ? -0.05 : -0.1;
+      const targetPosY = mobileCheck ? -0.05 : -0.18;
 
       if (modelReady) {
         materializeTime += delta;
@@ -234,7 +234,7 @@ export const Avatar3DCanvas: React.FC<{ className?: string }> = ({ className = '
 
   if (hasError) {
     return (
-      <div className={`relative w-full h-[280px] sm:h-[360px] md:h-[430px] flex items-center justify-center ${className}`}>
+      <div className={`relative w-full h-[280px] sm:h-[340px] md:h-[310px] lg:h-[350px] flex items-center justify-center ${className}`}>
         <Magnet padding={100} strength={3} className="w-full flex justify-center">
           <div className="relative w-44 h-44 sm:w-52 sm:h-52 rounded-full bg-gradient-to-br from-[#0B4F6C] via-[#2563EB] to-[#38BDF8] flex items-center justify-center shadow-2xl border-4 border-white/30">
             <span className="text-white font-black text-5xl tracking-tighter">JP</span>
@@ -247,7 +247,7 @@ export const Avatar3DCanvas: React.FC<{ className?: string }> = ({ className = '
   return (
     <div
       ref={containerRef}
-      className={`relative w-full h-[280px] sm:h-[360px] md:h-[430px] flex items-center justify-center bg-transparent ${className}`}
+      className={`relative w-full h-[280px] sm:h-[340px] md:h-[310px] lg:h-[350px] flex items-center justify-center bg-transparent ${className}`}
     />
   );
 };

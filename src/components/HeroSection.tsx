@@ -74,8 +74,8 @@ export const HeroSection: React.FC = () => {
       </FadeIn>
 
       {/* 2. DESKTOP HERO LAYOUT */}
-      <div className="hidden md:flex flex-col items-center overflow-hidden w-full text-center -mt-8 lg:-mt-14 z-10">
-        <FadeIn delay={0.08} y={-10} className="mb-4">
+      <div className="hidden md:flex flex-col items-center overflow-hidden w-full text-center -mt-12 lg:-mt-20 z-10">
+        <FadeIn delay={0.08} y={-10} className="mb-2">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--surface)] border border-[var(--border)] text-sm tracking-wide shadow-sm">
             <span className="w-2.5 h-2.5 rounded-full bg-[var(--accent)] animate-ping" />
             <MapPin className="w-4 h-4 text-[var(--accent)]" />
@@ -84,14 +84,14 @@ export const HeroSection: React.FC = () => {
         </FadeIn>
 
         <FadeIn delay={0.15} y={40}>
-          <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[18vw] lg:text-[19vw]">
+          <h1 className="hero-heading font-black uppercase tracking-[0.04em] leading-[0.9] whitespace-nowrap w-full text-[13vw] lg:text-[14.2vw]">
             Peace
           </h1>
         </FadeIn>
       </div>
 
-      {/* Desktop 3D Head Avatar (Centered Overlay — Sole 3D Feature) */}
-      <div className="hidden md:block absolute left-1/2 -translate-x-1/2 z-30 w-[420px] lg:w-[480px] bottom-4 pointer-events-auto">
+      {/* Desktop 3D Head Avatar (Centered Overlay — Positioned cleanly so PEACE stays legible) */}
+      <div className="hidden md:block absolute left-1/2 -translate-x-1/2 z-30 w-[330px] lg:w-[375px] bottom-1 pointer-events-auto">
         <FadeIn delay={0.5} y={30}>
           <Avatar3DCanvas />
         </FadeIn>

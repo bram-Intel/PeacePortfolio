@@ -11,23 +11,31 @@ const CV_URL =
 
 export const ContactFooter: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [whatsappHref, setWhatsappHref] = useState('');
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.email || !formData.message) return;
 
-    const subject = encodeURIComponent(`Portfolio Inquiry from ${formData.name || formData.email}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name || 'Visitor'}\nEmail: ${formData.email}\n\n${formData.message}`
-    );
-    window.location.href = `mailto:olododoimoaseda@gmail.com?subject=${subject}&body=${body}`;
+    const bundledMessage = [
+      `Hello Peace, I visited your portfolio and would like to connect!`,
+      ``,
+      `*Name:* ${formData.name.trim() || 'Portfolio Visitor'}`,
+      `*Email:* ${formData.email.trim()}`,
+      `*Message:*`,
+      formData.message.trim(),
+    ].join('\n');
+
+    const url = `https://wa.me/2347034644644?text=${encodeURIComponent(bundledMessage)}`;
+    setWhatsappHref(url);
+    window.open(url, '_blank', 'noopener,noreferrer');
 
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
       setFormData({ name: '', email: '', message: '' });
-    }, 4500);
+    }, 6000);
   };
 
   return (
@@ -189,12 +197,28 @@ export const ContactFooter: React.FC = () => {
             />
 
             {submitted ? (
-              <div className="flex items-center gap-2 text-emerald-500 font-bold py-2">
-                <CheckCircle className="w-5 h-5" /> Opening your email client to send message!
+              <div className="flex flex-col gap-2 text-emerald-500 font-bold py-2 text-sm">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                  <span>Opening WhatsApp with your message!</span>
+                </div>
+                {whatsappHref && (
+                  <a
+                    href={whatsappHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-xs text-[var(--accent)] underline font-semibold w-fit"
+                  >
+                    Click here if WhatsApp didn&apos;t open automatically
+                  </a>
+                )}
               </div>
             ) : (
-              <div className="pt-2">
-                <ContactButton label="Send Message" />
+              <div className="pt-2 flex flex-col gap-2">
+                <ContactButton label="Send via WhatsApp" />
+                <span className="text-[11px] text-[var(--text-muted)] font-mono">
+                  Bundles your details straight to Peace&apos;s WhatsApp (+234 703 464 4644).
+                </span>
               </div>
             )}
           </form>
