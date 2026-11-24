@@ -2,7 +2,8 @@ import React from 'react';
 import { FadeIn } from './FadeIn';
 import { AnimatedText } from './AnimatedText';
 import { ContactButton } from './ContactButton';
-import { Mail, Phone, MessageCircle, Figma, FileText, Sparkles, Palette, Layers, BookOpen } from 'lucide-react';
+import { Mail, Phone, Figma, FileText, Sparkles, Palette, Layers, BookOpen } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const AboutSection: React.FC = () => {
   const profileText =
@@ -71,9 +72,9 @@ export const AboutSection: React.FC = () => {
             href="https://wa.me/2347034644644"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--surface)] border border-[var(--border)] text-xs sm:text-sm font-semibold text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors shadow-sm"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--surface)] border border-[var(--border)] text-xs sm:text-sm font-semibold text-[var(--text)] hover:border-[#25D366] hover:text-[#25D366] transition-colors shadow-sm"
           >
-            <MessageCircle className="w-4 h-4 text-[var(--accent)]" />
+            <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
             <span>WhatsApp: 07034644644</span>
           </a>
           <a

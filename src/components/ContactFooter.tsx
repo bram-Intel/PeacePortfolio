@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { FadeIn } from './FadeIn';
 import { ContactButton } from './ContactButton';
 import { BrandLogo } from './BrandLogo';
-import { CheckCircle, Mail, MapPin, Phone, MessageCircle, Figma, FileText, Briefcase, Check, ExternalLink, BookOpen } from 'lucide-react';
+import { CheckCircle, Mail, MapPin, Phone, Figma, FileText, Briefcase, Check, ExternalLink, BookOpen } from 'lucide-react';
+import { WhatsAppIcon } from './WhatsAppIcon';
 
 const FIGMA_URL =
   'https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1';
@@ -159,8 +160,8 @@ export const ContactFooter: React.FC = () => {
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <MessageCircle className="w-5 h-5 text-[var(--accent)] flex-shrink-0" />
-                  <a href="https://wa.me/2347034644644" target="_blank" rel="noreferrer" className="hover:text-[var(--accent)] hover:underline">
+                  <WhatsAppIcon className="w-5 h-5 text-[#25D366] flex-shrink-0" />
+                  <a href="https://wa.me/2347034644644" target="_blank" rel="noreferrer" className="hover:text-[#25D366] hover:underline">
                     WhatsApp: 07034644644
                   </a>
                 </div>
@@ -177,6 +178,49 @@ export const ContactFooter: React.FC = () => {
               </div>
             </FadeIn>
           </div>
+
+          <FadeIn delay={0.3} y={20} className="mt-8">
+            <div className="flex gap-3">
+              <a
+                href="https://wa.me/2347034644644"
+                target="_blank"
+                rel="noreferrer"
+                className="p-3 rounded-full bg-[var(--background)] border border-[var(--border)] hover:border-[#25D366] text-[#25D366] transition-colors shadow-sm"
+                aria-label="Chat on WhatsApp"
+                title="Chat on WhatsApp"
+              >
+                <WhatsAppIcon className="w-5 h-5" />
+              </a>
+              <a
+                href={FIGMA_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="p-3 rounded-full bg-[var(--background)] border border-[var(--border)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors shadow-sm text-[var(--text)]"
+                aria-label="Figma Portfolio"
+                title="Figma Portfolio"
+              >
+                <Figma className="w-5 h-5" />
+              </a>
+              <a
+                href={BEHANCE_GOALBOX_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="p-3 rounded-full bg-[var(--background)] border border-[var(--border)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors shadow-sm text-[var(--text)]"
+                aria-label="Behance Case Study"
+                title="GoalBox Case Study on Behance"
+              >
+                <BookOpen className="w-5 h-5" />
+              </a>
+              <a
+                href="mailto:olododoimoaseda@gmail.com"
+                className="p-3 rounded-full bg-[var(--background)] border border-[var(--border)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors shadow-sm text-[var(--text)]"
+                aria-label="Email Peace"
+                title="Email Peace"
+              >
+                <Mail className="w-5 h-5" />
+              </a>
+            </div>
+          </FadeIn>
         </div>
 
         <FadeIn delay={0.2} y={30} className="flex-grow max-w-lg">
@@ -233,7 +277,10 @@ export const ContactFooter: React.FC = () => {
               </div>
             ) : (
               <div className="pt-2 flex flex-col gap-2">
-                <ContactButton label="Send via WhatsApp" />
+                <ContactButton
+                  label="Send via WhatsApp"
+                  icon={<WhatsAppIcon className="w-4 h-4 sm:w-5 sm:h-5 text-[#25D366]" />}
+                />
                 <span className="text-[11px] text-[var(--text-muted)] font-mono">
                   Bundles your details straight to Peace&apos;s WhatsApp (+234 703 464 4644).
                 </span>
