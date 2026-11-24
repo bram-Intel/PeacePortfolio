@@ -5,7 +5,7 @@ import { BrandLogo } from './BrandLogo';
 import { CheckCircle, Mail, MapPin, Phone, MessageCircle, Figma, FileText, Briefcase, Check, ExternalLink, BookOpen } from 'lucide-react';
 
 const FIGMA_URL =
-  'https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1&p=f&t=3L7WRNtzHKgcLSgR-0';
+  'https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1';
 const BEHANCE_GOALBOX_URL =
   'https://www.behance.net/gallery/258910589/GoalBox';
 const CV_URL =

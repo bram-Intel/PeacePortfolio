@@ -28,16 +28,16 @@ export const ExperienceSection: React.FC = () => {
                   <div className="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-[var(--accent)] border-4 border-[var(--background)] animate-pulse" />
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                     <h3 className="text-xl sm:text-2xl font-bold uppercase tracking-wider text-[var(--accent)]">
-                      Digital Marketing / UI/UX Designer
+                      Digital Marketer / UI/UX Designer
                     </h3>
                     <span className="px-3 py-1 rounded-full bg-[var(--surface)] border border-[var(--border)] text-xs font-mono font-bold text-[var(--accent)]">
                       2026 • Jureb
                     </span>
                   </div>
                   <ul className="space-y-2.5 text-sm sm:text-base font-normal text-[var(--text-muted)] leading-relaxed list-disc list-inside">
-                    <li>Collaborated with designers and developers to build a responsive website for an all-in-one business management platform.</li>
-                    <li>Participated in product discussions, collaborative design sessions, and planning for the product&apos;s relaunch programme.</li>
-                    <li>Supported product communication, digital marketing initiatives, and hosted monthly webinars to boost audience engagement.</li>
+                    <li>Collaborated with another designer and developers to design and develop a responsive website for an all-in-one business management platform.</li>
+                    <li>Participated in product discussions and collaborative design sessions to support product development and relaunch planning.</li>
+                    <li>Supported product communication through digital content and initiated/hosted monthly webinars to boost audience engagement and product awareness.</li>
                   </ul>
                 </div>
 
@@ -49,12 +49,12 @@ export const ExperienceSection: React.FC = () => {
                       Creative Assistant &amp; Social Media Manager
                     </h3>
                     <span className="px-3 py-1 rounded-full bg-[var(--surface)] border border-[var(--border)] text-xs font-mono text-[var(--text-muted)]">
-                      2024 – 2025 • Harrowspot Digitals
+                      May 2024 – June 2025 • Harrowspot Digitals
                     </span>
                   </div>
                   <ul className="space-y-2.5 text-sm sm:text-base font-normal text-[var(--text-muted)] leading-relaxed list-disc list-inside">
-                    <li>Developed creative content strategies and social media content calendars for brands across Instagram, Facebook, and TikTok.</li>
-                    <li>Collaborated on and supervised visual design deliverables, and produced voice-overs and short-form video content.</li>
+                    <li>Developed creative content strategies, calendars, visual content, and scripts for Instagram, Facebook, and TikTok.</li>
+                    <li>Collaborated with and supervised design work to maintain brand consistency, and produced voice-overs &amp; short-form video content (Canva, CapCut, InShot).</li>
                   </ul>
                 </div>
 
@@ -63,14 +63,14 @@ export const ExperienceSection: React.FC = () => {
                   <div className="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-[#0B4F6C] border-4 border-[var(--background)]" />
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                     <h3 className="text-xl sm:text-2xl font-bold uppercase tracking-wider text-[var(--text)]">
-                      UI / UX Intern
+                      UI/UX Intern
                     </h3>
                     <span className="px-3 py-1 rounded-full bg-[var(--surface)] border border-[var(--border)] text-xs font-mono text-[var(--text-muted)]">
                       Sep – Dec 2025 • Champs Interior Decoration
                     </span>
                   </div>
                   <ul className="space-y-2.5 text-sm sm:text-base font-normal text-[var(--text-muted)] leading-relaxed list-disc list-inside">
-                    <li>Supported creative design tasks, visual content development, and presentation of design concepts while maintaining brand consistency.</li>
+                    <li>Supported creative design tasks, visual content development, and presentation of design concepts while maintaining visual consistency across brand materials.</li>
                   </ul>
                 </div>
               </div>
@@ -88,10 +88,10 @@ export const ExperienceSection: React.FC = () => {
                   Education
                 </span>
                 <h4 className="text-lg sm:text-xl font-bold uppercase text-[var(--text)] mt-1">
-                  B.Sc. Mass Communication
+                  B.Sc. in Mass Communication
                 </h4>
                 <p className="text-sm text-[var(--text-muted)] mt-1 font-medium">
-                  Université Protestante de l&apos;Afrique de l&apos;Ouest (UPAO) • Class of 2026
+                  Université Protestante de l&apos;Afrique de l&apos;Ouest (UPAO) • 2026
                 </p>
               </div>
             </div>

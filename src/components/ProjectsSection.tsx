@@ -18,7 +18,7 @@ interface ProjectData {
 }
 
 const FIGMA_PORTFOLIO_URL =
-  'https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1&p=f&t=3L7WRNtzHKgcLSgR-0';
+  'https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1';
 const GOALBOX_BEHANCE_URL =
   'https://www.behance.net/gallery/258910589/GoalBox';
 
@@ -26,11 +26,11 @@ const PROJECTS: ProjectData[] = [
   {
     id: 'proj-1',
     number: '01',
-    category: 'HealthTech • Web & Mobile UI',
-    name: 'VaxiTrack — Child Vaccination Platform',
-    tools: ['Figma', 'User Flows', 'Responsive Web', 'Mobile UI'],
+    category: 'HealthTech • Completed Project',
+    name: 'VaxiTrack — Child Vaccination & Medication Platform',
+    tools: ['Figma', 'Information Hierarchy', 'Responsive Web', 'Accessibility'],
     summary:
-      "A digital healthcare solution designed to help mothers track their children's vaccination schedules, appointments, nearby hospitals, and medication reminders in one accessible experience.",
+      "A healthcare digital experience helping mothers keep track of children's vaccination and medication schedules, built with clear information hierarchy and accessible content presentation.",
     mainImg: '/assets/project_vaxitrack.jpg',
     projectUrl: FIGMA_PORTFOLIO_URL,
     buttonLabel: 'View Figma',
@@ -39,11 +39,11 @@ const PROJECTS: ProjectData[] = [
   {
     id: 'proj-2',
     number: '02',
-    category: 'FinTech • Student Savings App',
-    name: 'GoalBox — Student Savings Fintech App',
-    tools: ['Figma', 'UX Research', 'Design System', 'Miro'],
+    category: 'FinTech • Product Design Case Study',
+    name: 'GoalBox — Student Savings Application',
+    tools: ['Figma', 'Interactive Prototyping', 'Design System', 'Miro'],
     summary:
-      'A student-focused savings application encouraging financial discipline with goal-based target boxes and emergency funds, backed by quantitative research, personas, and empathy mapping.',
+      'A student-focused fintech savings experience helping Nigerian students build financial discipline before graduation, featuring Target Box, Emergency Fund, and interactive prototypes.',
     mainImg: '/assets/project_goalbox.jpg',
     projectUrl: GOALBOX_BEHANCE_URL,
     buttonLabel: 'View Case Study',

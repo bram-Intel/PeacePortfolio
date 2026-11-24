@@ -6,7 +6,7 @@ import { Mail, Phone, MessageCircle, Figma, FileText, Sparkles, Palette, Layers,
 
 export const AboutSection: React.FC = () => {
   const profileText =
-    "I'm Peace, a user-focused UI/UX Designer with experience contributing to digital product design, responsive web interfaces, and user-centred design solutions. Proficient in Figma, wireframing, and interactive prototyping, I translate product requirements into intuitive digital experiences while combining product thinking with communication and creative problem-solving.";
+    "I'm Peace, a Product & UI/UX Designer with hands-on experience designing user-centred digital experiences, responsive web interfaces, and intuitive product solutions. Skilled in Figma, wireframing, prototyping, user flows, information architecture, and interface design — combining a collaborative product mindset with digital marketing, creative communication, and brand development.";
 
   return (
     <section
@@ -93,7 +93,7 @@ export const AboutSection: React.FC = () => {
             <span>Behance Case Study</span>
           </a>
           <a
-            href="https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1&p=f&t=3L7WRNtzHKgcLSgR-0"
+            href="https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--surface)] border border-[var(--border)] text-xs sm:text-sm font-semibold text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors shadow-sm"
