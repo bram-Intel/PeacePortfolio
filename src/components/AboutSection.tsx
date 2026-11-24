@@ -2,11 +2,11 @@ import React from 'react';
 import { FadeIn } from './FadeIn';
 import { AnimatedText } from './AnimatedText';
 import { ContactButton } from './ContactButton';
-import { Mail, Phone, MessageCircle, Figma, FileText, Sparkles, Palette, Layers } from 'lucide-react';
+import { Mail, Phone, MessageCircle, Figma, FileText, Sparkles, Palette, Layers, BookOpen } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
   const profileText =
-    "I'm Peace, a Product Designer passionate about creating intuitive, functional and visually engaging digital experiences. I enjoy transforming ideas and complex problems into simple, user-centred solutions through thoughtful design, research and prototyping. With experience in web and mobile interface design, I continuously explore ways to improve digital products and make technology more accessible and enjoyable.";
+    "I'm Peace, a user-focused UI/UX Designer with experience contributing to digital product design, responsive web interfaces, and user-centred design solutions. Proficient in Figma, wireframing, and interactive prototyping, I translate product requirements into intuitive digital experiences while combining product thinking with communication and creative problem-solving.";
 
   return (
     <section
@@ -82,6 +82,15 @@ export const AboutSection: React.FC = () => {
           >
             <Phone className="w-4 h-4 text-[var(--accent)]" />
             <span>09130685316</span>
+          </a>
+          <a
+            href="https://www.behance.net/gallery/258910589/GoalBox"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--surface)] border border-[var(--border)] text-xs sm:text-sm font-semibold text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors shadow-sm"
+          >
+            <BookOpen className="w-4 h-4 text-[var(--accent)]" />
+            <span>Behance Case Study</span>
           </a>
           <a
             href="https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1&p=f&t=3L7WRNtzHKgcLSgR-0"

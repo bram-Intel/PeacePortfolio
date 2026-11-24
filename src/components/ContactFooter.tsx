@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { FadeIn } from './FadeIn';
 import { ContactButton } from './ContactButton';
 import { BrandLogo } from './BrandLogo';
-import { CheckCircle, Mail, MapPin, Phone, MessageCircle, Figma, FileText, Briefcase, Check, ExternalLink } from 'lucide-react';
+import { CheckCircle, Mail, MapPin, Phone, MessageCircle, Figma, FileText, Briefcase, Check, ExternalLink, BookOpen } from 'lucide-react';
 
 const FIGMA_URL =
   'https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1&p=f&t=3L7WRNtzHKgcLSgR-0';
+const BEHANCE_GOALBOX_URL =
+  'https://www.behance.net/gallery/258910589/GoalBox';
 const CV_URL =
   'https://drive.google.com/file/d/1s90CXH5Ba2yayf0mYS7jcK4DbhVoVsrl/view?usp=sharing';
 
@@ -90,6 +92,22 @@ export const ContactFooter: React.FC = () => {
           </a>
 
           <a
+            href={BEHANCE_GOALBOX_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-between gap-3 px-6 py-4 rounded-2xl bg-[var(--background)] border border-[var(--border)] hover:border-[var(--accent)] transition-colors shadow-sm group"
+          >
+            <div className="flex items-center gap-3">
+              <BookOpen className="w-5 h-5 text-[var(--accent)]" />
+              <div className="text-left">
+                <div className="text-xs font-mono uppercase tracking-wider text-[var(--text-muted)]">Case Study</div>
+                <div className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--accent)]">GoalBox on Behance</div>
+              </div>
+            </div>
+            <ExternalLink className="w-4 h-4 text-[var(--accent)]" />
+          </a>
+
+          <a
             href={CV_URL}
             target="_blank"
             rel="noreferrer"
@@ -128,7 +146,7 @@ export const ContactFooter: React.FC = () => {
                 Let&apos;s Connect
               </h2>
               <p className="text-[var(--text-muted)] font-normal text-base sm:text-lg mb-8 leading-relaxed">
-                Have a product idea, UI/UX project, internship/role, or voice-over brief in mind? Reach out anytime!
+                Have a product idea, UI/UX project, design role, or voice-over brief in mind? Reach out anytime!
               </p>
             </FadeIn>
 

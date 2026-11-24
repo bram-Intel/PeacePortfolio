@@ -12,11 +12,15 @@ interface ProjectData {
   tools: string[];
   summary: string;
   mainImg: string;
-  figmaUrl: string;
+  projectUrl: string;
+  buttonLabel: string;
+  linkLabel: string;
 }
 
 const FIGMA_PORTFOLIO_URL =
   'https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1&p=f&t=3L7WRNtzHKgcLSgR-0';
+const GOALBOX_BEHANCE_URL =
+  'https://www.behance.net/gallery/258910589/GoalBox';
 
 const PROJECTS: ProjectData[] = [
   {
@@ -28,7 +32,9 @@ const PROJECTS: ProjectData[] = [
     summary:
       "A digital healthcare solution designed to help mothers track their children's vaccination schedules, appointments, nearby hospitals, and medication reminders in one accessible experience.",
     mainImg: '/assets/project_vaxitrack.jpg',
-    figmaUrl: FIGMA_PORTFOLIO_URL,
+    projectUrl: FIGMA_PORTFOLIO_URL,
+    buttonLabel: 'View Figma',
+    linkLabel: 'Open in Figma Portfolio',
   },
   {
     id: 'proj-2',
@@ -39,7 +45,9 @@ const PROJECTS: ProjectData[] = [
     summary:
       'A student-focused savings application encouraging financial discipline with goal-based target boxes and emergency funds, backed by quantitative research, personas, and empathy mapping.',
     mainImg: '/assets/project_goalbox.jpg',
-    figmaUrl: FIGMA_PORTFOLIO_URL,
+    projectUrl: GOALBOX_BEHANCE_URL,
+    buttonLabel: 'View Case Study',
+    linkLabel: 'Read Full Case Study on Behance',
   },
   {
     id: 'proj-3',
@@ -50,7 +58,9 @@ const PROJECTS: ProjectData[] = [
     summary:
       'A logistics platform concept designed to simplify local dispatch services and cross-border shipping through road and air transportation with clear quote request workflows.',
     mainImg: '/assets/project_urbanfleet.jpg',
-    figmaUrl: FIGMA_PORTFOLIO_URL,
+    projectUrl: FIGMA_PORTFOLIO_URL,
+    buttonLabel: 'View Figma',
+    linkLabel: 'Open in Figma Portfolio',
   },
   {
     id: 'proj-4',
@@ -61,7 +71,9 @@ const PROJECTS: ProjectData[] = [
     summary:
       'A vibrant food-ordering mobile product concept focused on effortless meal discovery, category browsing, hot deals, and a seamless end-to-end checkout experience.',
     mainImg: '/assets/project_mealio.jpg',
-    figmaUrl: FIGMA_PORTFOLIO_URL,
+    projectUrl: FIGMA_PORTFOLIO_URL,
+    buttonLabel: 'View Figma',
+    linkLabel: 'Open in Figma Portfolio',
   },
 ];
 
@@ -107,7 +119,7 @@ const Card: React.FC<{
             </div>
           </div>
 
-          <LiveProjectButton href={project.figmaUrl} label="View Figma" />
+          <LiveProjectButton href={project.projectUrl} label={project.buttonLabel} />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
@@ -142,12 +154,12 @@ const Card: React.FC<{
             </div>
 
             <a
-              href={project.figmaUrl}
+              href={project.projectUrl}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-[var(--accent)] font-bold hover:underline"
             >
-              <span>Open in Figma Portfolio</span>
+              <span>{project.linkLabel}</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
