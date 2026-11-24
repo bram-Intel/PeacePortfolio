@@ -2,7 +2,7 @@ import React from 'react';
 import { FadeIn } from './FadeIn';
 import { AnimatedText } from './AnimatedText';
 import { ContactButton } from './ContactButton';
-import { Mail, Phone, Figma, FileText, Sparkles, Palette, Layers, BookOpen } from 'lucide-react';
+import { Mail, Phone, Figma, FileText, Sparkles, Palette, Layers } from 'lucide-react';
 import { WhatsAppIcon } from './WhatsAppIcon';
 
 export const AboutSection: React.FC = () => {
@@ -83,15 +83,6 @@ export const AboutSection: React.FC = () => {
           >
             <Phone className="w-4 h-4 text-[var(--accent)]" />
             <span>09130685316</span>
-          </a>
-          <a
-            href="https://www.behance.net/gallery/258910589/GoalBox"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--surface)] border border-[var(--border)] text-xs sm:text-sm font-semibold text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors shadow-sm"
-          >
-            <BookOpen className="w-4 h-4 text-[var(--accent)]" />
-            <span>Behance Case Study</span>
           </a>
           <a
             href="https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1"

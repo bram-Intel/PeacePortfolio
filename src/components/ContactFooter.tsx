@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import { FadeIn } from './FadeIn';
 import { ContactButton } from './ContactButton';
 import { BrandLogo } from './BrandLogo';
-import { CheckCircle, Mail, MapPin, Phone, Figma, FileText, Briefcase, Check, ExternalLink, BookOpen } from 'lucide-react';
+import { CheckCircle, Mail, MapPin, Phone, Figma, FileText, Briefcase, Check, ExternalLink } from 'lucide-react';
 import { WhatsAppIcon } from './WhatsAppIcon';
 
 const FIGMA_URL =
   'https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1';
-const BEHANCE_GOALBOX_URL =
-  'https://www.behance.net/gallery/258910589/GoalBox';
 const CV_URL =
   'https://drive.google.com/file/d/1s90CXH5Ba2yayf0mYS7jcK4DbhVoVsrl/view?usp=sharing';
 
@@ -87,22 +85,6 @@ export const ContactFooter: React.FC = () => {
               <div className="text-left">
                 <div className="text-xs font-mono uppercase tracking-wider text-[var(--text-muted)]">Explore</div>
                 <div className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--accent)]">Figma Portfolio</div>
-              </div>
-            </div>
-            <ExternalLink className="w-4 h-4 text-[var(--accent)]" />
-          </a>
-
-          <a
-            href={BEHANCE_GOALBOX_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center justify-between gap-3 px-6 py-4 rounded-2xl bg-[var(--background)] border border-[var(--border)] hover:border-[var(--accent)] transition-colors shadow-sm group"
-          >
-            <div className="flex items-center gap-3">
-              <BookOpen className="w-5 h-5 text-[var(--accent)]" />
-              <div className="text-left">
-                <div className="text-xs font-mono uppercase tracking-wider text-[var(--text-muted)]">Case Study</div>
-                <div className="text-sm font-bold text-[var(--text)] group-hover:text-[var(--accent)]">GoalBox on Behance</div>
               </div>
             </div>
             <ExternalLink className="w-4 h-4 text-[var(--accent)]" />
@@ -200,16 +182,6 @@ export const ContactFooter: React.FC = () => {
                 title="Figma Portfolio"
               >
                 <Figma className="w-5 h-5" />
-              </a>
-              <a
-                href={BEHANCE_GOALBOX_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="p-3 rounded-full bg-[var(--background)] border border-[var(--border)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors shadow-sm text-[var(--text)]"
-                aria-label="Behance Case Study"
-                title="GoalBox Case Study on Behance"
-              >
-                <BookOpen className="w-5 h-5" />
               </a>
               <a
                 href="mailto:olododoimoaseda@gmail.com"
