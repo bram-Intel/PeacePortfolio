@@ -94,7 +94,7 @@ export const AboutSection: React.FC = () => {
             <span>Figma Portfolio</span>
           </a>
           <a
-            href="https://drive.google.com/file/d/1s90CXH5Ba2yayf0mYS7jcK4DbhVoVsrl/view?usp=sharing"
+            href="/assets/Peace_Olododo_Imoaseda_CV.pdf"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--surface)] border border-[var(--border)] text-xs sm:text-sm font-semibold text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors shadow-sm"

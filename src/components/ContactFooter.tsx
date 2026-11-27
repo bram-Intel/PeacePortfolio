@@ -7,8 +7,7 @@ import { WhatsAppIcon } from './WhatsAppIcon';
 
 const FIGMA_URL =
   'https://www.figma.com/design/NYhqBxZVmVnieeyyK34SVG/Untitled?node-id=0-1';
-const CV_URL =
-  'https://drive.google.com/file/d/1s90CXH5Ba2yayf0mYS7jcK4DbhVoVsrl/view?usp=sharing';
+const CV_URL = '/assets/Peace_Olododo_Imoaseda_CV.pdf';
 
 export const ContactFooter: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
